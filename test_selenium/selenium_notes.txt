@@ -1,1 +1,21 @@
 下载
+
+
+
+
+
+
+
+web空间定位与常见操作
+1.点击与输入
+find_element(By.ID,'kw').send_keys("霍格沃兹学院") 输入
+find_element(By.ID,'kw').click()
+
+XPATH
+解析html和xml，速度较慢，从头到尾的遍历，但是是万能遍历方式
+$x('//*[@id="s_tab"]//a[last()]')：定位最后一个，$x('//*[@id="s_tab"]//a[i]')选择满足条件的第i个
+多级子元素：/只能定位到子元素；//可以定位到子孙元素
+css selector
+更快捷
+$('[id=kw]')或$('#kw')查询id是kw的元素或$('#s_tab a:nth-child(i+1)')查询出s_tab下的a的第i个元素等同于$('[s_tab] a:nth-child(i)'),最后的第i个元素为$('#s_tab a:nth-last-child(i)')
+空格代表子孙元素；>代表子元素
