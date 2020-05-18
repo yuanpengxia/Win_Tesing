@@ -18,4 +18,5 @@ class TestWait:
         self.driver.find_element(By.CSS_SELECTOR, '#su').click()
         sleep(2)
         self.driver.find_element(By.CSS_SELECTOR,'#s_tab a:nth-child(2)').click()
+        self.driver.find_element(By.CSS_SELECTOR,'#s_tab a:nth-last-child(3)').click()
         sleep(5)
