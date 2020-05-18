@@ -19,3 +19,9 @@ css selector
 更快捷
 $('[id=kw]')或$('#kw')查询id是kw的元素或$('#s_tab a:nth-child(i+1)')查询出s_tab下的a的第i个元素等同于$('[s_tab] a:nth-child(i)'),最后的第i个元素为$('#s_tab a:nth-last-child(i)')
 空格代表子孙元素；>代表子元素
+
+web控件交互进阶
+action
+ActionChains:执行pc鼠标点击，双击，右键，拖拽等事件
+click()点击数标；click_and_hold()点击并按住不动；context_click()右键；drag_and_drop()拖拽
+TouchActions:模拟PC和移动端的点击，滑动，拖拽，多点触控等多种手势操作
