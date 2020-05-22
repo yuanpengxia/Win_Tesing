@@ -1,0 +1,2 @@
+adb logcat |findstr -i Displayed:
+adb devices:
